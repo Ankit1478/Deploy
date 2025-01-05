@@ -1,0 +1,47 @@
+services:
+  deploy-service:
+    build:
+      context: ./deployly-deploy-service
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - REDIS_URL=redis://redis:6379
+    depends_on:
+      - redis
+    volumes:
+      - build-output:/app/output
+    networks:
+      - deployly-network
+    restart: unless-stopped
+    env_file: .env 
+
+  request-handler:
+    build:
+      context: ./deployly-requestHandler-service
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001"
+    networks:
+      - deployly-network
+    restart: unless-stopped
+    env_file: .env 
+
+  upload-service:
+    build:
+      context: ./deployly-upload-service
+      dockerfile: Dockerfile
+    ports:
+      - "3002:3000"
+    environment:
+      - NODE_ENV=production
+      - REDIS_URL=redis://redis:6379
+    depends_on:
+      - redis
+    volumes:
+      - build-output:/app/output
+    networks:
+      - deployly-network
+    restart: unless-stopped
+    env_file: .env 

@@ -4,6 +4,8 @@ Deployly is a platform similar to Vercel and Netlify that allows users to deploy
 
 ## Architecture
 ![image](https://github.com/user-attachments/assets/056b6d82-687c-48a6-aba4-893732b74537)
+<img width="1451" alt="Screenshot 2025-01-05 at 9 05 43 AM" src="https://github.com/user-attachments/assets/c8bc6f4a-710c-40f9-beb3-9dbfd04c8bad" />
+
 
 ## Features
 

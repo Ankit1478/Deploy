@@ -36,7 +36,7 @@ Before running the project, ensure you have the following installed:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/aaryan182/deployly.git
+   [git clone https://github.com/aaryan182/deployly.git](https://github.com/Ankit1478/Deploy.git)
    cd deployly
 2. Install dependencies:
    ```bash
@@ -72,7 +72,7 @@ Docker provides an efficient and consistent environment to run Deployly without 
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/aaryan182/deployly.git
+   [git clone https://github.com/aaryan182/deployly.git](https://github.com/Ankit1478/Deploy.git)
    cd deployly
   
 2. Create the .env File: Add the necessary environment variables to a .env file in the root directory:
@@ -106,14 +106,6 @@ Docker provides an efficient and consistent environment to run Deployly without 
  6. Stop the Application: To stop the containers, press Ctrl+C or run:
     ```bash
     docker-compose down
-
-License
-This project is licensed under the MIT License.
-
-Contact
-For questions or feedback, feel free to reach out to the repository owner or open an issue.
-
-Built with ❤️ by [AaryanBajaj](https://x.com/AaryanBajaj18)
 
 
    
